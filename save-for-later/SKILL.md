@@ -21,6 +21,7 @@ Create a GitHub issue to capture a planned feature or task for later implementat
 
 3. Create a well-structured GitHub issue using `gh issue create`:
    - **Title**: Clear, concise summary (under 70 chars)
+   - **Label**: `enhancement` (unless the user specifies a different label)
    - **Body**: Use this structure:
 
 ```
@@ -37,4 +38,9 @@ Detailed implementation steps with affected files.
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
 ```
 
-4. Return the issue URL to the user.
+4. Add the issue to the **Front IQ MVP** project (project number 4, owner togasoftware) unless the user specifies otherwise:
+   ```
+   gh project item-add 4 --owner togasoftware --url <issue-url>
+   ```
+
+5. Return the issue URL to the user.

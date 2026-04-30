@@ -1,0 +1,12 @@
+# Ignore everything in skills/ by default — keeps gstack's package and shim symlinks out of git
+*
+
+# Allowlist: this file + custom skills I own
+!.gitignore
+!README.md
+!resolve-pr-comments/
+!resolve-pr-comments/**
+!review-pr-comments/
+!review-pr-comments/**
+!save-for-later/
+!save-for-later/**
